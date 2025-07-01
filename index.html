@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML and Data Science Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="">
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM23.653 20.3039C25.4398 22.0907 25.4398 24.9665 23.653 26.7533C21.8662 28.5401 18.9904 28.5401 17.2036 26.7533L12.4444 31.5124C15.2222 34.2902 19.7777 34.2902 22.5555 31.5124C25.3333 28.7346 25.3333 24.1802 22.5555 21.4024L23.653 20.3039ZM28.5975 12.4444C25.8197 9.66663 21.2653 9.66663 18.4875 12.4444C15.7097 15.2222 15.7097 19.7777 18.4875 22.5555L17.3901 23.653C15.6033 21.8662 15.6033 18.9904 17.3901 17.2036C19.1769 15.4168 22.0527 15.4168 23.8395 17.2036L28.5975 12.4444Z" fill="#00A19B"/>
+                </svg>
+            </div>
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <a href="#">Ask</a>
+                <a href="#">My Career <i class="fas fa-chevron-down"></i></a>
+                <a href="#">Marketplace <i class="fas fa-chevron-down"></i></a>
+                <a href="#">My Activity <i class="fas fa-chevron-down"></i></a>
+                <a href="#">People</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search people, jobs or projects">
+                </div>
+                <div class="header-icons">
+                    <i class="fas fa-th"></i>
+                    <div class="user-avatar-small">
+                        <span>BA</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="back-link">
+            <a href="#"><i class="fas fa-chevron-left"></i> My plans</a>
+        </div>
+        
+        <div class="plan-header">
+            <div class="plan-title">
+                <div class="user-avatar-large">BA</div>
+                <div class="title-text">
+                    <h2>ML and Data Science</h2>
+                    <span>Created by Bharat Agarwal</span><br>
+                    <span>Last updated by Bharat Agarwal on 30/06/2025</span>
+                </div>
+            </div>
+            <div class="plan-actions">
+                <div class="view-mode-actions">
+                    <button><i class="fas fa-share-alt"></i> Share</button>
+                    <button id="edit-btn"><i class="fas fa-pencil-alt"></i> Edit</button>
+                </div>
+                <div class="edit-mode-actions">
+                    <button id="done-btn">Done</button>
+                </div>
+                <button><i class="far fa-sticky-note"></i> Notes <span class="notes-badge">0</span></button>
+                <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+        </div>
+
+        <div class="content-body">
+            <aside class="plan-info">
+                <div class="progress-container">
+                    <div class="progress-bar-background">
+                        <div class="progress-bar-foreground" style="width: 2%;"></div>
+                    </div>
+                    <span>0% Complete</span>
+                </div>
+                
+                <h3>Plan info</h3>
+                
+                <div class="info-item">
+                    <label>Description</label>
+                    <span>Not specified</span>
+                </div>
+                <div class="info-item">
+                    <label>Relevant role</label>
+                    <span>Not specified</span>
+                </div>
+                <div class="info-item">
+                    <label>Plan Duration (Weeks)</label>
+                    <p>10</p>
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <label>Skills</label>
+                            <span>2</span>
+                        </div>
+                        <div class="stat-bar"></div>
+                        <a href="#">0 learned ></a>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <label>Tasks</label>
+                            <span>2</span>
+                        </div>
+                        <div class="stat-bar"></div>
+                        <span>0 completed</span>
+                    </div>
+                </div>
+            </aside>
+
+            <div id="main-content">
+                <div id="sections-container">
+                    <main class="tasks-section" data-collapsed="false">
+                        <div class="tasks-header">
+                            <div class="section-title">
+                                <label>Section name</label>
+                                <input type="text" value="ML and DS">
+                            </div>
+                            <div class="section-controls">
+                               <div class="priority-container">
+                                   <button class="priority-btn section-btn" data-priority="">
+                                       <i class="fas fa-flag"></i> Set Priority
+                                   </button>
+                                                                  <div class="priority-popup">
+                                   <button class="priority-option" data-priority="high">
+                                       <span class="priority-dot high"></span> High Priority
+                                   </button>
+                                   <button class="priority-option" data-priority="medium">
+                                       <span class="priority-dot medium"></span> Medium Priority
+                                   </button>
+                                   <button class="priority-option" data-priority="low">
+                                       <span class="priority-dot low"></span> Low Priority
+                                   </button>
+                                   <button class="priority-option priority-reset" data-priority="">
+                                       <i class="fas fa-undo"></i> Reset Priority
+                                   </button>
+                               </div>
+                               </div>
+                               <div class="deadline-container">
+                                   <button class="deadline-btn section-btn" data-deadline="">
+                                       <i class="fas fa-calendar-alt"></i> Set Deadline
+                                   </button>
+                                                                  <div class="deadline-popup">
+                                   <div class="deadline-tabs">
+                                       <button class="deadline-tab active" data-tab="date">
+                                           <i class="fas fa-calendar-alt"></i> Pick a Date
+                                       </button>
+                                       <button class="deadline-tab" data-tab="duration">
+                                           <i class="fas fa-clock"></i> Enter Duration
+                                       </button>
+                                   </div>
+                                   <div class="deadline-content">
+                                       <div class="deadline-tab-content active" data-content="date">
+                                           <input type="date" class="deadline-picker">
+                                       </div>
+                                       <div class="deadline-tab-content" data-content="duration">
+                                           <div class="duration-input-row">
+                                               <input type="number" class="duration-number" min="1" placeholder="5">
+                                               <select class="duration-unit">
+                                                   <option value="days">days</option>
+                                                   <option value="weeks">weeks</option>
+                                                   <option value="months">months</option>
+                                               </select>
+                                           </div>
+                                           <button class="duration-apply-btn">Apply Duration</button>
+                                       </div>
+                                   </div>
+                                   <button class="deadline-reset" data-deadline="">
+                                       <i class="fas fa-undo"></i> Reset Deadline
+                                   </button>
+                               </div>
+                               </div>
+                               <span class="task-count">5</span>
+                               <i class="fas fa-chevron-up"></i>
+                               <div class="more-options-menu-container">
+                                   <i class="fas fa-ellipsis-h more-options-trigger"></i>
+                                   <div class="delete-popup">
+                                       <button class="delete-section-btn"><i class="fas fa-trash-alt"></i> Delete</button>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-info-bar">
+                            <p class="drag-info">Hold and drag cards to reorder content</p>
+                            <button class="add-subsection-btn"><i class="fas fa-plus"></i> Add Subsection</button>
+                        </div>
+
+                        <div class="subsections-container"></div>
+
+                        <div class="task-cards-container">
+                            <div class="task-card">
+                                <div class="task-card-image-area">
+                                    <div class="task-tag">
+                                        <i class="fas fa-clipboard-list"></i> Task
+                                    </div>
+                                </div>
+                                <div class="task-card-info">
+                                    <h4>8. Intro to ML</h4>
+                                    <span class="card-subtitle">https://www.kaggle.com/learn/ir...</span>
+                                </div>
+                                <div class="task-card-footer">
+                                    <button class="status-btn in-progress">
+                                        <i class="fas fa-circle"></i> In progress <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <button class="remove-btn">Remove from section</button>
+                                </div>
+                            </div>
+
+                            <div class="task-card">
+                                <div class="task-card-image-area">
+                                    <div class="task-tag">
+                                        <i class="fas fa-clipboard-list"></i> Task
+                                    </div>
+                                </div>
+                                <div class="task-card-info">
+                                    <h4>6. Data Science :</h4>
+                                    <span class="card-subtitle">https://www.udemy.com/course/data-sc...</span>
+                                </div>
+                                <div class="task-card-footer">
+                                    <button class="status-btn not-started">
+                                        Not started <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                     <button class="remove-btn">Remove from section</button>
+                                </div>
+                            </div>
+
+                            <div class="task-card card-course">
+                                <div class="task-card-image-area">
+                                    <div class="task-tag">
+                                        <i class="fas fa-book-open"></i> Course
+                                    </div>
+                                </div>
+                                <div class="task-card-info">
+                                    <h4>AI Lunch &amp; Learn (June 6, 2022)</h4>
+                                    <span class="card-subtitle">Mindtickle</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Machine Learning</span>
+                                        <span class="skill-tag">ML</span>
+                                        <span class="skill-tag">+1</span>
+                                    </div>
+                                </div>
+                                <div class="task-card-footer">
+                                    <button class="status-btn not-started">
+                                        Not started <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <button class="remove-btn">Remove from section</button>
+                                </div>
+                            </div>
+
+                            <div class="task-card card-course">
+                                <div class="task-card-image-area">
+                                    <div class="task-tag">
+                                        <i class="fas fa-book-open"></i> Course
+                                    </div>
+                                </div>
+                                <div class="task-card-info">
+                                    <h4>Career Navigator - Graph Network...</h4>
+                                    <span class="card-subtitle">eightfold - 1 hour</span>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Algorithms</span>
+                                        <span class="skill-tag">Data Structures</span>
+                                        <span class="skill-tag">+1</span>
+                                    </div>
+                                </div>
+                                <div class="task-card-footer">
+                                    <button class="status-btn not-started">
+                                        Not started <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <button class="remove-btn">Remove from section</button>
+                                </div>
+                            </div>
+
+                            <div class="task-card card-project">
+                                <div class="task-card-image-area">
+                                    <div class="task-tag">
+                                        <i class="fas fa-ruler-combined"></i> Project
+                                    </div>
+                                </div>
+                                <div class="task-card-info">
+                                    <h4>HACK0323 - Hiring Company Landing...</h4>
+                                    <span class="card-subtitle">Mar 02 2023 - No end date</span>
+                                </div>
+                                <div class="task-card-footer">
+                                    <button class="status-btn not-started">
+                                        Not started <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <button class="remove-btn">Remove from section</button>
+                                </div>
+                            </div>
+                            
+                            <div class="add-item-card">
+                                <div class="add-item-popup">
+                                    <div class="popup-item popup-course">
+                                        <i class="fas fa-book-open"></i>
+                                        <div class="popup-item-text">
+                                            <strong>Course</strong>
+                                            <span>Courses are perfect to kickoff the Development plan for anyone at any point in their career paths.</span>
+                                        </div>
+                                    </div>
+                                    <div class="popup-item popup-task">
+                                        <i class="fas fa-clipboard-list"></i>
+                                        <div class="popup-item-text">
+                                            <strong>Task</strong>
+                                            <span>Use this to build anything you want to be a part of the plan.</span>
+                                        </div>
+                                    </div>
+                                     <div class="popup-item popup-project">
+                                        <i class="fas fa-ruler-combined"></i>
+                                        <div class="popup-item-text">
+                                            <strong>Project</strong>
+                                            <span>Working on projects where the targeted role is required give employees the best hands-on experience.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Explore different learning materials for the skills in your plan</p>
+                                <button class="add-item-btn">
+                                    Add an Item <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </main>
+                </div>
+                <button id="add-section-btn"><i class="fas fa-plus"></i> Add section</button>
+            </div>
+        </div>
+    </div>
+    <button class="get-help-btn">Get Help</button>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html> 

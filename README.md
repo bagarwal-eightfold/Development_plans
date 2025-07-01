@@ -17,7 +17,8 @@ This project is an interactive prototype for building and managing upskilling pl
 
 ---
 
-## 2. How to run the code
+## 2. How to run the code 
+**Before you try running the code, it can be a better idea to check functionalities directly from this link: https://bagarwal-eightfold.github.io/Development_plans/
 
 1. **Clone the repository:**
    ```bash

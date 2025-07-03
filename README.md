@@ -1,8 +1,8 @@
-# ML & Data-Science Upskilling Dashboard
+# Upskilling Plan Prototype
 
 ## 1. What does this code do?
 
-This project is an interactive dashboard for building and managing upskilling plans in ML and Data Science. It is fully front-end (HTML/CSS/JS) and runs in the browser.
+This project is an interactive prototype for building and managing upskilling plans. It is fully front-end (HTML/CSS/JS) and runs in the browser.
 
 **Functionalities added:**
 
@@ -13,11 +13,12 @@ This project is an interactive dashboard for building and managing upskilling pl
 5. Automatic reordering of sections and subsections according to deadline and then priorities
 6. Integrated AI-recommended suggestions for tasks, with the option to create your own
 7. Drag-and-drop reordering of sections, subsections, and cards
-8. Edit/View mode toggle for safe editing
+8. Edit/View mode toggle for safe editing (already there in the product - However this is important to access the functionalities)
 
 ---
 
-## 2. How to run the code
+## 2. How to run the code 
+**Before you try running the code, it can be a better idea to check functionalities directly from this link: https://bagarwal-eightfold.github.io/Development_plans/
 
 1. **Clone the repository:**
    ```bash
